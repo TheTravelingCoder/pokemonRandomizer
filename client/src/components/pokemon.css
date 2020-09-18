@@ -1,0 +1,39 @@
+ul {
+  padding:0;
+  list-style:none;
+  width: 30%;
+  margin:auto;
+}
+
+li{
+  font-size:1.2rem;
+  line-height: 2rem;
+  border-bottom: 1px dotted #777;
+}
+
+button {
+	box-shadow:inset 10px 14px 0px -30px #7f1bc2;
+	background:linear-gradient(to bottom, #9845c7 5%, #28a6e0 100%);
+	background-color:#9845c7;
+	border-radius:27px;
+	border:3px solid #00090a;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:22px;
+	padding:16px 68px;
+	text-decoration:none;
+}
+button:hover {
+	background:linear-gradient(to bottom, #28a6e0 5%, #9845c7 100%);
+	background-color:#28a6e0;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+h2 {
+	text-decoration: underline overline;
+}
