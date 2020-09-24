@@ -1,9 +1,9 @@
 ## Pokemon Randomizer
 
 To-Do:
-Rename sprites
-Add in Tms and Trs
-Add Isle of Armor
+Rename sprites,
+Add in Tms and Trs,
+Add Isle of Armor,
 Adjust color and UI
 
 ## App Info
