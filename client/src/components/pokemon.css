@@ -35,5 +35,24 @@ button:active {
 }
 
 h2 {
-	text-decoration: underline overline;
+	text-decoration: underline;
+}
+
+table {
+	width: auto;
+	border-radius:27px;
+	border:3px solid #00090a;
+}
+
+tbody:nth-child(even) {
+	background-color: #878683;
+}
+
+tbody:nth-child(odd) {
+	background-color: #2069e0;
+}
+
+th {
+	text-decoration: underline;
+	background-color: #32a2a8;
 }
