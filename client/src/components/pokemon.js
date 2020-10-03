@@ -36,7 +36,6 @@ export class Pokemon extends Component {
         }else{
           const team2 = []; 
           const team2Random = [];
-          console.log(team2Random);
           for(var n = 0; n < state.team2.length; n++){
             team2.push(state.team2[n])
           }
@@ -48,7 +47,22 @@ export class Pokemon extends Component {
           return {team2, team2Random}
         }
       })
-    ));
+    ))
+    // .then(() => {
+    //   var teamImages = [];
+    //   for(var i = 0; i < this.state.team1.length; i++){
+    //     teamImages.push(this.state.team1[i])
+    //   }
+    //   for(var o = 0; o < this.state.team2.length; o++){
+    //     teamImages.push(this.state.team2[o])
+    //   }
+    //   console.log(teamImages)
+    //   for(var z = 0; z < teamImages.length; z++){
+    //     var elem = document.createElement('img');
+    //     elem.setAttribute("src", './sprites/' + teamImages[z].name + '.png')
+    //     document.getElementById('picture').appendChild(elem)      
+    //   }
+    // });
   }
 
   componentDidUpdate() {
@@ -68,6 +82,17 @@ export class Pokemon extends Component {
                         team1Random.push(pokemon.randomMove);
                         this.setState({team1Random});
       })
+      // .then(() => {
+      //   var teamImages = [];
+      //   for(var i = 0; i < this.state.team1.length; i++){
+      //     teamImages.push(this.state.team1[i])
+      //   }
+      //   for(var o = 0; o < this.state.team2.length; o++){
+      //     teamImages.push(this.state.team2[o])
+      //   }
+      //   console.log(teamImages)
+      //   fetch('/api/images')
+      // });
   }
 
   render() {
@@ -76,10 +101,10 @@ export class Pokemon extends Component {
         <Row>
           <Container>
             <Col>
-              <h2>Pokemon</h2>
+              <h2>Pokemon</h2> 
               <ul>
                 {this.state.pokemon.map(pokemon => 
-                  <li key={pokemon.id}> {pokemon.name} {pokemon.galar_dex} </li>
+                  <li key={pokemon.id}> <img src={require('./sprites/' + pokemon.name + '.png')} alt={pokemon.name}></img> {pokemon.name} {pokemon.galar_dex} </li>
                 )}
               </ul>
               <br/>
