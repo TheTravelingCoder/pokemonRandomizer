@@ -117,6 +117,7 @@ export class Pokemon extends Component {
             <Table striped bordered hover>
               <thead>
                 <tr>
+                  <th>Sprite</th>
                   <th>Pokemon</th>
                   <th colSpan="4">Moves</th>
                 </tr>
@@ -124,6 +125,7 @@ export class Pokemon extends Component {
               {this.state.team1Random.map(team1Random => 
                 <tbody>
                   <tr>
+                    <td><img width='100px' height='100px' src={require('./sprites/' + team1Random[0] + '.png')} alt={team1Random[0]}></img></td>
                     <td>{team1Random[0]}</td>
                     <td>{team1Random[1][1]}</td>
                     <td>{team1Random[2][1]}</td>
@@ -139,6 +141,7 @@ export class Pokemon extends Component {
             <Table striped bordered hover>
               <thead>
                 <tr>
+                  <th>Sprite</th> 
                   <th>Pokemon</th> 
                   <th colSpan="4">Moves</th>
                 </tr>
@@ -146,6 +149,7 @@ export class Pokemon extends Component {
               {this.state.team2Random.map(team2Random => 
                 <tbody>
                   <tr>
+                    <td><img width='100px' height='100px' src={require('./sprites/' + team2Random[0] + '.png')} alt={team2Random[0]}></img></td>
                     <td>{team2Random[0]}</td>
                     <td>{team2Random[1][1]}</td>
                     <td>{team2Random[2][1]}</td>
