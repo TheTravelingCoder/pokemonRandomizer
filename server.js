@@ -20,8 +20,8 @@ app.get('/api/pokemon', (req, res) => {
     }
     moveCount.push(i);
   }
-  randomMove.unshift(pokemon[0].name)
-  console.log(pokemon[0].name)
+  randomMove.unshift(pokemon[0].name);
+  console.log(pokemon[0].name);
   res.json({pokemon,
             randomMove});
 });

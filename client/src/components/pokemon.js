@@ -25,26 +25,26 @@ export class Pokemon extends Component {
           const team1 = []; 
           const team1Random = [];
           for(var i = 0; i < state.team1.length; i++){
-            team1.push(state.team1[i])
+            team1.push(state.team1[i]);
           }
           for(var z = 0; z < state.team1Random.length; z++){
-            team1Random.push(state.team1Random[z])
+            team1Random.push(state.team1Random[z]);
           }
-          team1Random.push(state.randomMove)
-          team1.push(state.pokemon[0]) 
-          return {team1, team1Random}
+          team1Random.push(state.randomMove);
+          team1.push(state.pokemon[0]);
+          return {team1, team1Random};
         }else{
           const team2 = []; 
           const team2Random = [];
           for(var n = 0; n < state.team2.length; n++){
-            team2.push(state.team2[n])
+            team2.push(state.team2[n]);
           }
           for(var p = 0; p < state.team2Random.length; p++){
-            team2Random.push(state.team2Random[p])
+            team2Random.push(state.team2Random[p]);
           }
-          team2Random.push(state.randomMove)
-          team2.push(state.pokemon[0]) 
-          return {team2, team2Random}
+          team2Random.push(state.randomMove);
+          team2.push(state.pokemon[0]);
+          return {team2, team2Random};
         }
       })
     ))
